@@ -59,6 +59,8 @@ Abrir http://localhost:4200
 
 ## Configuracion pendiente (PLACEHOLDERS)
 
+Los microservicios usan PostgreSQL y requieren que `DB_PASSWORD` esté definida en el entorno antes de iniciarlos.
+
 ### Azure AD (IDaaS)
 
 1. **Frontend** (`src/app/configs/msal.config.ts`):
