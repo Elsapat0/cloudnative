@@ -2,8 +2,8 @@ import { Configuration } from '@azure/msal-browser';
 
 export const msalConfig: Configuration = {
   auth: {
-    clientId: '2f281162-babf-4536-88c8-942f20273edb',
-    authority: 'https://login.microsoftonline.com/2065748d-ab65-48bd-8110-f6e96d8fd02e',
+    clientId: '4d91fc12-0438-4f42-bb18-21a77f3423ca',
+    authority: 'https://login.microsoftonline.com/83ff2569-d772-43f7-97e2-9c69f67484ad',
     redirectUri: 'http://localhost:4200/',
     postLogoutRedirectUri: 'http://localhost:4200/login',
   },
@@ -23,10 +23,10 @@ export const msalConfig: Configuration = {
 export const protectedResources = {
   bffApi: {
     endpoint: 'http://localhost:8080/api',
-    scopes: ['api://2f281162-babf-4536-88c8-942f20273edb/AccesoUsuario'],
+    scopes: ['api://4d91fc12-0438-4f42-bb18-21a77f3423ca/access_as_user'],
   },
 };
 
 export const loginRequest = {
-  scopes: ['openid', 'profile', 'api://2f281162-babf-4536-88c8-942f20273edb/AccesoUsuario'],
+  scopes: ['openid', 'profile'],
 };
